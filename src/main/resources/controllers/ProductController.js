@@ -1,7 +1,7 @@
-app.controller("ProductController", function($scope,$http) {
+app.controller("ProductController", function($scope,$http,filters) {
 	
-	$scope.filters = { };
-  
+	 $scope.filters = filters; 
+	
     $http.get("../json/CategoryConfig.json").success( function(response) {
        $scope.prodcategories = response; 
     });

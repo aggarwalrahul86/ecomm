@@ -15,3 +15,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	      redirectTo: '/Home'
 	   });
 }]);
+
+app.factory('filters', function () {
+    return { category: '' };
+});

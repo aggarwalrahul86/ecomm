@@ -3,7 +3,7 @@ app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
 	    .when('/Home', {
 	      templateUrl: 'HomePage.html',
-	      controller: 'MainController'
+	      controller: 'ProductController'
 	   }).
 	   
 	   when('/Contact', {

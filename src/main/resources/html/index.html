@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app = "myapp" ng-controller = "MainController">
+<html lang="en" ng-app = "myapp">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{title}}</title>
+    <title ng-controller = "MainController">{{title}}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container" ng-controller = "MainController">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -96,6 +96,9 @@
     
     <!-- Controller -->
     <script src="../controllers/MainController.js"></script>
+    
+    <!-- Controller -->
+    <script src="../controllers/ProductController.js"></script>
 
 </body>
 

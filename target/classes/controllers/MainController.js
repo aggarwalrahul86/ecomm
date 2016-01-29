@@ -1,14 +1,10 @@
-app.controller("MainController", function($scope,$http) {
+app.controller("MainController", function($scope,$http,filters) {
 	
 	$scope.title = "Frame your Memories";
+	$scope.filters = filters;
 	
-	$scope.filters = { };
-  
     $http.get("../json/CategoryConfig.json").success( function(response) {
        $scope.categories = response; 
     });
     
-    $http.get("../json/ProductConfig.json").success( function(response) {
-        $scope.products = response; 
-     });
  });

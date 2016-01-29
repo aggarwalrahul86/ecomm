@@ -7,7 +7,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	   }).
 	   
 	   when('/Contact', {
-	      templateUrl: 'ContactPage.html',
+	      templateUrl: 'contact.html',/*'ContactPage.html',*/
 	      controller: 'ContactController'
 	   }).
 	   

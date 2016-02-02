@@ -9,4 +9,16 @@ app.controller("ProductController", function($scope,$http,filters) {
     $http.get("../json/ProductConfig.json").success( function(response) {
         $scope.products = response; 
      });
+    
+    $(function() {
+
+        animations();
+        productDetailGallery(4000);
+        carousels();
+        utils();
+        demo();
+    });
+    
+    alert('ok');
+    
  });

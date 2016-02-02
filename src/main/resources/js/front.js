@@ -2,14 +2,14 @@ if ($.cookie("theme_csspath")) {
     $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
 }
 
-$(function() {
+/*$(function() {
 
     animations();
     productDetailGallery(4000);
     carousels();
     utils();
     demo();
-});
+});*/
 
 
 $(window).load(function() {
@@ -133,8 +133,11 @@ function utils() {
 /* carousels */
 
 function carousels() {
+	
+	console.log("Inside carousels");
 
     $("#get-inspired").owlCarousel({
+    	
 	navigation: true, // Show next and prev buttons
 	slideSpeed: 300,
 	paginationSpeed: 400,
@@ -149,6 +152,7 @@ function carousels() {
 	slideSpeed: 300,
 	paginationSpeed: 400,
 	afterInit: function() {
+		console.log("Inside peoduct slider init function");
 	    $('.product-slider .item').css('visibility', 'visible');
 	}
     });

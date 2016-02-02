@@ -1,6 +1,6 @@
 app.controller("ProductController", function($scope,$http,filters) {
 	
-	 $scope.filters = filters; 
+	$scope.filters = filters; 
 	
     $http.get("../json/CategoryConfig.json").success( function(response) {
        $scope.prodcategories = response; 
@@ -11,7 +11,6 @@ app.controller("ProductController", function($scope,$http,filters) {
      });
     
     $(function() {
-
         animations();
         productDetailGallery(4000);
         carousels();
@@ -19,6 +18,5 @@ app.controller("ProductController", function($scope,$http,filters) {
         demo();
     });
     
-    alert('ok');
     
  });

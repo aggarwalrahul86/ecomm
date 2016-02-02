@@ -7,7 +7,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	   }).
 	   
 	   when('/Contact', {
-	      templateUrl: 'contact.html',/*'ContactPage.html',*/
+	      templateUrl: 'contact.html',
 	      controller: 'ContactController'
 	   }).
 	   
@@ -19,3 +19,5 @@ app.config(['$routeProvider', function($routeProvider) {
 app.factory('filters', function () {
     return { category: '' };
 });
+
+

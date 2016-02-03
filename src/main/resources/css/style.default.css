@@ -630,7 +630,7 @@ h1 {
 #content #details .social p {
   line-height: 26px;
 }
-#content #details .social p a {
+#content #details .social p div {
   margin: 0 10px 0 0;
   color: #fff;
   display: inline-block;
@@ -645,23 +645,23 @@ h1 {
   transition: all 0.2s ease-out;
   vertical-align: bottom;
 }
-#content #details .social p a i {
+#content #details .social p div i {
   vertical-align: bottom;
   line-height: 26px;
 }
-#content #details .social p a.facebook {
+#content #details .social p div.facebook {
   background-color: #4460ae;
 }
-#content #details .social p a.gplus {
+#content #details .social p div.gplus {
   background-color: #c21f25;
 }
-#content #details .social p a.twitter {
+#content #details .social p div.twitter {
   background-color: #3cf;
 }
-#content #details .social p a.instagram {
+#content #details .social p div.instagram {
   background-color: #cd4378;
 }
-#content #details .social p a.email {
+#content #details .social p div.email {
   background-color: #4a7f45;
 }
 @media (max-width: 991px) {
@@ -1668,4 +1668,8 @@ address {
 .panel-primary .panel-title a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+div.social > div{
+	float:left
 }

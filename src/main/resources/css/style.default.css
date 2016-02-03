@@ -651,18 +651,28 @@ h1 {
 }
 #content #details .social p div.facebook {
   background-color: #4460ae;
+  float:left;
+  margin-left: 30px;
 }
 #content #details .social p div.gplus {
   background-color: #c21f25;
+   float:left;
+   margin-left: 30px;
 }
 #content #details .social p div.twitter {
   background-color: #3cf;
+   float:left;
+   ;margin-left: 30px;
 }
 #content #details .social p div.instagram {
   background-color: #cd4378;
+   float:left;
+   margin-left: 30px;
 }
 #content #details .social p div.email {
   background-color: #4a7f45;
+   float:left;
+   ;margin-left: 30px;
 }
 @media (max-width: 991px) {
   #content #details .social {
@@ -919,20 +929,30 @@ h1 {
   vertical-align: bottom;
   line-height: 30px;
 }
-#footer .social a.facebook:hover {
+#footer .social div.facebook:hover {
   background-color: #4460ae;
+    float:left;
+  margin-left: 30px;
 }
-#footer .social a.gplus:hover {
+#footer .social div.gplus:hover {
   background-color: #c21f25;
+    float:left;
+  margin-left: 30px;
 }
-#footer .social a.twitter:hover {
+#footer .social div.twitter:hover {
   background-color: #3cf;
+    float:left;
+  margin-left: 30px;
 }
-#footer .social a.instagram:hover {
+#footer .social div.instagram:hover {
   background-color: #cd4378;
+    float:left;
+  margin-left: 30px;
 }
-#footer .social a.email:hover {
+#footer .social div.email:hover {
   background-color: #4a7f45;
+    float:left;
+  margin-left: 30px;
 }
 #copyright {
   background: #333;

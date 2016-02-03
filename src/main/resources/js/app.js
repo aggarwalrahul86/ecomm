@@ -25,3 +25,25 @@ app.factory('filters', function() {
 		category : ''
 	};
 });
+
+app.directive('onFinishRender', function ($timeout) {
+return {
+    restrict: 'A',
+    link: function (scope, element, attr) {
+        if (scope.$last === true) {
+            $timeout(function () {
+                scope.$emit('ngRepeatFinished');
+            });
+        }
+    }
+}
+});
+/*app.directive('carouselDirective', function() {
+	  return function(scope, element, attrs) {
+	    console.log('ROW: index = ', scope.$index);
+	    scope.$watch('$last',function(v){
+	      carou 
+	    });
+	    
+	  };
+	})*/

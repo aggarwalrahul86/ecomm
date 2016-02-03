@@ -10,13 +10,14 @@ app.controller("ProductController", function($scope,$http,filters) {
         $scope.products = response; 
      });
     
-    $(function() {
-        animations();
-        productDetailGallery(4000);
-        carousels();
-        utils();
-        demo();
+    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+    	 animations();
+         productDetailGallery(4000);
+         carousels();
+         utils();
+         demo();
+         console.log("visibility is"+ $('.product-slider .item').css('visibility'));
     });
-    
+ 
     
  });

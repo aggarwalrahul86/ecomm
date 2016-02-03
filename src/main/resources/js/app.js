@@ -1,4 +1,4 @@
-var app = angular.module("myapp", [ 'ngRoute' ]);
+var app = angular.module("myapp", [ 'ngRoute','angulike' ]);
 app.config([ '$routeProvider', function($routeProvider) {
 	$routeProvider.when('/Home', {
 		templateUrl : 'HomePage.html',
@@ -13,6 +13,10 @@ app.config([ '$routeProvider', function($routeProvider) {
 	when('/category', {
 		templateUrl : 'category.html',
 		controller : 'ProductController'
+	}).
+	when('/detail', {
+		templateUrl : 'detail.html',
+		controller : 'ProductDetailController'
 	}).
 
 	otherwise({
@@ -38,15 +42,6 @@ return {
     }
 }
 });
-/*app.directive('carouselDirective', function() {
-	  return function(scope, element, attrs) {
-	    console.log('ROW: index = ', scope.$index);
-	    scope.$watch('$last',function(v){
-	      carou 
-	    });
-	    
-	  };
-	})*/
 
 app.factory('filters', function() {
 	return {

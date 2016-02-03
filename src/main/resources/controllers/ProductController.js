@@ -1,10 +1,11 @@
-app.controller("ProductController", function($scope,$http,filters) {
+app.controller("ProductController", function($scope,$http,filters,productService) {
 	
 	$scope.filters = filters; 
 	
-    $http.get("../json/CategoryConfig.json").success( function(response) {
-       $scope.prodcategories = response; 
-    });
+	$scope.categories = productService.getProductCategories().success(
+			function(response) {
+				$scope.categories = response;
+			});
     
     $http.get("../json/ProductConfig.json").success( function(response) {
         $scope.products = response; 

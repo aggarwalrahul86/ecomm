@@ -47,3 +47,10 @@ return {
 	    
 	  };
 	})*/
+
+app.factory('filters', function() {
+	return {
+		category : ''
+	};
+});
+

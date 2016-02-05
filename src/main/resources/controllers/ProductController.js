@@ -1,6 +1,7 @@
 app.controller("ProductController", function($scope,$http,filters,productService) {
 	
-	$scope.filters = filters; 
+	$scope.filters = filters;
+	$scope.rowsPerPage = 50;
 	
 	$scope.categories = productService.getProductCategories().success(
 			function(response) {
@@ -8,7 +9,7 @@ app.controller("ProductController", function($scope,$http,filters,productService
 			});
     
     $http.get("../json/ProductConfig.json").success( function(response) {
-        $scope.products = response; 
+        $scope.products = response;
      });
     
     $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
@@ -17,7 +18,6 @@ app.controller("ProductController", function($scope,$http,filters,productService
          carousels();
          utils();
          demo();
-         console.log("visibility is"+ $('.product-slider .item').css('visibility'));
     });
  
     

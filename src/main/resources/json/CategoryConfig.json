@@ -1,4 +1,6 @@
-[
+[{
+	"category": "Frames",
+	"values": [
 	{
 		"name":"Plastic Frames",
 		"id":"PlasticFrame"
@@ -16,3 +18,34 @@
 		"id":"Personalized Gifts"
 	}
 ]
+},
+{
+	"category": "Mugs",
+	"values": [
+	{
+		"name":"Basic Mug",
+		"id":"BasicMug"
+	},
+	{
+		"name":"Mug 2",
+		"id":"Mug2"
+	}
+]
+},
+{
+	"category": "Flowers",
+	"values": [
+	{
+		"name":"Rose",
+		"id":"Rose"
+	},
+	{
+		"name":"Lily",
+		"id":"Lily"
+	},
+	{
+		"name":"Mixed Bouquet",
+		"id":"MixedBouquet"
+	}
+]
+}]

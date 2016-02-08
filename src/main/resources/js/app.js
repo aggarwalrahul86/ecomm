@@ -1,4 +1,4 @@
-var app = angular.module("myapp", [ 'ngRoute','angulike' ]);
+var app = angular.module("myapp", [ 'ngRoute','angulike','imageZoomApp']);
 app.config([ '$routeProvider', function($routeProvider) {
 	$routeProvider.when('/Home', {
 		templateUrl : 'HomePage.html',
@@ -26,7 +26,9 @@ app.config([ '$routeProvider', function($routeProvider) {
 
 app.factory('filters', function() {
 	return {
-		category : ''
+		category : '',
+		color : '',
+		price : ''
 	};
 });
 
@@ -42,6 +44,8 @@ app.directive('onFinishRender', function($timeout) {
 		}
 	}
 });
+
+
 /*
  * app.directive('carouselDirective', function() { return function(scope,
  * element, attrs) { console.log('ROW: index = ', scope.$index);
@@ -154,3 +158,7 @@ app.filter('paginate', function(Paginator) {
         templateUrl: 'paginationControl.html'
     };
 });
+
+
+
+

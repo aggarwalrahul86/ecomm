@@ -6,86 +6,97 @@
 		"price":1000,
 		"image":"../images/prod.png",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"reviews":"15 reviews"
+		"reviews":"15 reviews",
+		"color" : "red"
 	},
 	{
 		"name":"Frame 2",
 		"id":"frame2",
 		"category":"Plastic Frames",
-		"price":1000,
+		"price":800,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "red"
 	},
 	{
 		"name":"Frame 3",
 		"id":"frame3",
 		"category":"Plastic Frames",
-		"price":1000,
+		"price":700,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color": "white"
 	},
 	{
 		"name":"Frame 4",
 		"id":"frame4",
 		"category":"Collage",
-		"price":1000,
+		"price":600,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "black"
 	},
 	{
 		"name":"Frame 5",
 		"id":"frame5",
 		"category":"Plastic Frames",
-		"price":1000,
+		"price":900,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "white"
 	},
 	{
 		"name":"Frame 6",
 		"id":"frame6",
 		"category":"Plastic Frames",
-		"price":1000,
+		"price":700,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "orange"
 	},
 	{
 		"name":"Frame 7",
 		"id":"frame7",
 		"category":"Wooden Frames",
-		"price":1000,
+		"price":200,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "orange"
 	},
 	{
 		"name":"Frame 8",
 		"id":"frame8",
 		"category":"Wooden Frames",
-		"price":1000,
+		"price":500,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "pink"
 	},
 	{
 		"name":"Frame 9",
 		"id":"frame9",
 		"category":"Personalized Gifts",
-		"price":1000,
+		"price":890,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "red"
 	},
 	{
 		"name":"Frame 10",
 		"id":"frame10",
 		"category":"Personalized Gifts",
-		"price":1000,
+		"price":650,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "yellow"
 	},
 	{
 		"name":"Frame 11",
 		"id":"frame11",
 		"category":"Personalized Gifts",
-		"price":1000,
+		"price":700,
 		"image":"",
-		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"color" : "white"
 	}
 ]

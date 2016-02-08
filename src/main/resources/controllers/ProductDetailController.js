@@ -1,4 +1,4 @@
-app.controller("ProductDetailController", function($scope,$routeParams,productService) {
+app.controller("ProductDetailController", function($scope,$routeParams,productService,$sce) {
 	
 	$scope.scopeVar = $routeParams.productID;
 	$scope.product = {};
@@ -29,5 +29,29 @@ app.controller("ProductDetailController", function($scope,$routeParams,productSe
             Name: "Rahul", 
             ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
         };
+    
+    
+    $scope.zoomLvl = 4;
+    $scope.src = "../images/detailbig1.jpg";
+
+    this.images = [{
+      name: "Duck.jpg",
+      url: './img/duck.jpg'
+    },{
+      name: "Moon.jpg",
+      url: "./img/moon.jpg"
+    }];
+
+    this.addImage = function(){
+      this.url = $sce.trustAsResourceUrl(this.url);
+      
+      this.images.push({
+        name: this.name,
+        url: this.url
+      });
+
+      this.name = '';
+      this.url = '';
+    }
 	    
  });

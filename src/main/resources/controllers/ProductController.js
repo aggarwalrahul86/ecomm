@@ -1,4 +1,4 @@
-app.controller("ProductController", function($scope,$http,filters,productService) {
+app.controller("ProductController", function($scope,$http,filters,productService,$location) {
 	
 	$scope.filters = filters;
 	$scope.rowsPerPage = 50;
@@ -7,6 +7,10 @@ app.controller("ProductController", function($scope,$http,filters,productService
 			function(response) {
 				$scope.categories = response;
 			});
+	
+	$scope.viewDetails=function(param){			
+	       $location.path("/detail/"+param)       
+	    }
     
     $http.get("../json/ProductConfig.json").success( function(response) {
         $scope.products = response;

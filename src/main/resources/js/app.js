@@ -14,7 +14,7 @@ app.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : 'category.html',
 		controller : 'ProductController'
 	}).
-	when('/detail', {
+	when('/detail/:productID', {
 		templateUrl : 'detail.html',
 		controller : 'ProductDetailController'
 	}).

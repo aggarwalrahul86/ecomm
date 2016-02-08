@@ -25,7 +25,7 @@
 									<a href="#category">{{category.category}}</a>
 									<ul>
 										<li ng-repeat="subCategory in category.values"
-											ng-click="filters.category = subCategory.name"><a
+											ng-click="filters.category = subCategory.name" ng-class="{'active': subCategory.name == product.category}"><a
 											href="#category">{{subCategory.name}}
 											</a></li>
 				

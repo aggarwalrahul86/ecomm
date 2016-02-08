@@ -1693,3 +1693,8 @@ address {
 div.social > div{
 	float:left
 }
+
+.nav-pills > li > ul > li.active > a {
+  color: #ffffff;
+  background-color: #4fbfa8;
+}

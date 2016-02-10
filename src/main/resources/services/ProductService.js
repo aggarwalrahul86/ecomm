@@ -4,11 +4,15 @@ app.service('productService', function($http){
 		return $http.get("../json/CategoryConfig.json");
 	};
 	
+	this.getProductColors = function(){
+		return $http.get("../json/FiltersData.json");
+	}
+	
 	this.getProducts = function(){
 		return $http.get("../json/ProductConfig.json");
 	};
 	
-	this.getProductbyId = function(productId){
+	this.getProductbyId = function(productId, callback){
 		var productsArray = [];
 		var product = {};
 		$http.get("../json/ProductConfig.json").success(function(data){
@@ -19,18 +23,41 @@ app.service('productService', function($http){
 				if(obj.id == productId ){
 					 console.log(obj.id);
 					 product = obj;
-					 return product			 
+					 callback(product);	 
 				 }
 				
 			});
+	
+	this.getFilterCountbyCategory = function(categoryId,filerName, callback){
+				var productsArray = [];
+				var productsbyCategory = [];
+				$http.get("../json/ProductConfig.json").success(function(data){
+					productsArray = data;
+					
+					productsArray.forEach(function(obj) {
+						console.log(obj.id);
+						if(obj.category == categoryId){
+							 console.log(obj.category);
+							 productsbyCategory.push(obj);
+							// product = obj;
+							// callback(product);	 
+						 }
+						
+					});
+					
+			var filterscount = {};
 			
-/*			for(var i = 0; i < productsArray.length; i++) {
-			    var obj = productsArray[i];
-				 if(obj.id == productId ){
-					 console.log(obj.id);
-					 return obj			 
-				 }	
-			}*/
+			for(var i = 0; i < productsbyCategory.length; i++) {
+			    
+				var filterObj = productsbyCategory[i][filterName];
+				
+				var count = (filterscount[filterObj] || 0) + 1;
+				
+				filterscount[filterObj] = count;
+				
+				callback(filterscount);
+
+			}
 			
 			
 			

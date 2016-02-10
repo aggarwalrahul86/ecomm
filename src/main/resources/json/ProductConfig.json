@@ -7,7 +7,7 @@
 		"image":"../images/prod.png",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		"reviews":"15 reviews",
-		"color" : "red"
+		"color" : "Red"
 	},
 	{
 		"name":"Frame 2",
@@ -16,7 +16,7 @@
 		"price":800,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "red"
+		"color" : "Red"
 	},
 	{
 		"name":"Frame 3",
@@ -25,7 +25,7 @@
 		"price":700,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color": "white"
+		"color": "White"
 	},
 	{
 		"name":"Frame 4",
@@ -34,7 +34,7 @@
 		"price":600,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "black"
+		"color" : "Black"
 	},
 	{
 		"name":"Frame 5",
@@ -43,7 +43,7 @@
 		"price":900,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "white"
+		"color" : "White"
 	},
 	{
 		"name":"Frame 6",
@@ -52,7 +52,7 @@
 		"price":700,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "orange"
+		"color" : "Green"
 	},
 	{
 		"name":"Frame 7",
@@ -61,7 +61,7 @@
 		"price":200,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "orange"
+		"color" : "Green"
 	},
 	{
 		"name":"Frame 8",
@@ -70,7 +70,7 @@
 		"price":500,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "pink"
+		"color" : "Red"
 	},
 	{
 		"name":"Frame 9",
@@ -79,7 +79,7 @@
 		"price":890,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "red"
+		"color" : "Red"
 	},
 	{
 		"name":"Frame 10",
@@ -88,7 +88,7 @@
 		"price":650,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "yellow"
+		"color" : "Yellow"
 	},
 	{
 		"name":"Frame 11",
@@ -97,6 +97,6 @@
 		"price":700,
 		"image":"",
 		"description":"This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"color" : "white"
+		"color" : "White"
 	}
 ]

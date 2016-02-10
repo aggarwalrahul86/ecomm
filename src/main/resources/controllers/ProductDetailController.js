@@ -8,12 +8,16 @@ app.controller("ProductDetailController", function($scope,$routeParams,productSe
 				$scope.categories = response;
 			});
 	
-/*	productService.getProductbyId($routeParams.productID).then(
-			function(product) {
-				$scope.product = product;
-	});*/
+	$scope.colors = productService.getProductColors().success(
+			function(response) {
+				$scope.colors = response.colors;
+			});
 	
-	 productService.getProducts().success(function(productsArray){
+	productService.getProductbyId($routeParams.productID, function(product) {
+		$scope.product = product;
+	});
+	
+/*	 productService.getProducts().success(function(productsArray){
 			productsArray.forEach(function(obj) {
 				if(obj.id == $routeParams.productID ){
 					 product = obj;
@@ -21,7 +25,7 @@ app.controller("ProductDetailController", function($scope,$routeParams,productSe
 				 }
 			});
 			
-		});
+		});*/
 	
 	
     $scope.myModel = {

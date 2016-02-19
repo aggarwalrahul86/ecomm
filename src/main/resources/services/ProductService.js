@@ -27,6 +27,8 @@ app.service('productService', function($http){
 				 }
 				
 			});
+		});
+	};
 	
 	this.getFilterCountbyCategory = function(categoryId,filerName, callback){
 				var productsArray = [];

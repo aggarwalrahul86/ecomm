@@ -57,5 +57,9 @@ app.controller("ProductDetailController", function($scope,$routeParams,productSe
       this.name = '';
       this.url = '';
     }
+    
+ // get store and cart from service
+	//$scope.store = DataService.store;
+	//$scope.cart = MainController.cart;
 	    
  });

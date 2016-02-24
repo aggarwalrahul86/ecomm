@@ -19,7 +19,6 @@ app.service('productService', function($http){
 			productsArray = data;
 			
 			productsArray.forEach(function(obj) {
-				console.log(obj.id);
 				if(obj.id == productId ){
 					 console.log(obj.id);
 					 product = obj;

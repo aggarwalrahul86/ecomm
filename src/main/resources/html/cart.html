@@ -39,7 +39,8 @@
 											ng-click="cart.addItem(item.id, item.name, item.price, -1)">-</button>
 									</td>
 									<td>{{item.price * item.quantity | currency}}</td>
-									<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+									<td><a href="" ng-click="cart.addItem(item.id, item.name, item.price, -10000000)" ><i class="fa fa-trash-o"></i></a></td>
+
 								</tr>
 							</tbody>
 							<tfoot>

@@ -31,8 +31,50 @@ app.config([ '$routeProvider', function($routeProvider) {
 app.factory('filters', function() {
 	return {
 		category : '',
-		color : '',
+		color : [],
 		price : ''
+	};
+});
+
+app.filter('customFilter', function() {
+	return function(products, filter) {
+
+		var results = [];
+
+		if (filter.color.length == 0) {
+			return products;
+		} else {
+
+		var isColorSelected = false;
+
+			angular.forEach(filter.color, function(value, key) {
+				for ( var key in value) {
+					if (value[key] === true) {
+						isColorSelected = true;
+					}
+				}
+
+			});
+
+			if (!isColorSelected) {
+				return products;
+			}
+
+			var items = {
+				colors : filter.color,
+				out : []
+			};
+			angular.forEach(products, function(value, key) {
+				items.colors.forEach(function(colorValue, index) {
+					if (colorValue[value.color] === true) {
+						results.push(value);
+					}
+				});
+			}, results);
+			return results;
+
+		}
+
 	};
 });
 

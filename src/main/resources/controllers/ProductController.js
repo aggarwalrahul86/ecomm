@@ -3,6 +3,8 @@ app.controller("ProductController", function($scope,$http,filters,productService
 	$scope.filters = filters;
 	$scope.rowsPerPage = 50;
 	
+	$scope.colorsSelected = [];
+	
 	$scope.categories = productService.getProductCategories().success(
 			function(response) {
 				$scope.categories = response;
@@ -12,6 +14,28 @@ app.controller("ProductController", function($scope,$http,filters,productService
 			function(response) {
 				$scope.colors = response.colors;
 			});
+	
+	$scope.createFilter = function($event, colorName) {
+
+		var colorExist = false;
+
+		if ($scope.filters.color.length != 0) {
+
+			$scope.filters.color.forEach(function(color, index) {
+				if (colorName in color) {
+					colorExist = true;
+					$scope.filters.color[index][colorName] = $event;
+				}
+			});
+		}
+
+		if (!colorExist) {
+			colorObj = {};
+			colorObj[colorName] = $event;
+			$scope.filters.color.push(colorObj);
+		}
+
+	}
 	
 	$scope.colorFilter=function(categoryName){		
 		

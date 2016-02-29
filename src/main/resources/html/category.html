@@ -1,10 +1,5 @@
 <div id="content">
-<div class="col-md-12">
-	<ul class="breadcrumb">
-		<li><a href="#">Home</a></li>
-		<li>{{filters.category}}</li>
-	</ul>
-</div>
+<div ncy-breadcrumb></div>
 
 <div class="col-md-3">
 	<!-- *** MENUS AND FILTERS ***
@@ -88,7 +83,7 @@
 				<div class="text">
 					<p><h3>{{product.name}}</h3>
 					<h3>
-						<a href="" ng-click="viewDetails(product.id)">{{product.description}}</a>
+						<a ui-sref="Detail({productID: product.id})">{{product.description}}</a>
 					</h3>
 					<p>{{product.category}}</p>
 					<p class="price">{{product.price | currency}}</p>

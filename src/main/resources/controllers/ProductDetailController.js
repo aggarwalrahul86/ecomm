@@ -1,8 +1,8 @@
-app.controller("ProductDetailController", function($scope,$routeParams,productService,$sce) {
+app.controller("ProductDetailController", function($scope,$stateParams,productService,$sce) {
 	
-	$scope.scopeVar = $routeParams.productID;
+	$scope.scopeVar = $stateParams.productID;
 	$scope.product = {};
-	
+		
 	$scope.categories = productService.getProductCategories().success(
 			function(response) {
 				$scope.categories = response;
@@ -13,13 +13,13 @@ app.controller("ProductDetailController", function($scope,$routeParams,productSe
 				$scope.colors = response.colors;
 			});
 	
-	productService.getProductbyId($routeParams.productID, function(product) {
+	productService.getProductbyId($stateParams.productID, function(product) {
 		$scope.product = product;
 	});
 	
 /*	 productService.getProducts().success(function(productsArray){
 			productsArray.forEach(function(obj) {
-				if(obj.id == $routeParams.productID ){
+				if(obj.id == $stateParams.productID ){
 					 product = obj;
 					 $scope.product = product; 		 
 				 }

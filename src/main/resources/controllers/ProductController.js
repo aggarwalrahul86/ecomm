@@ -57,7 +57,7 @@ app.controller("ProductController", function($scope,$http,filters,productService
 	    }
 	
 	
-	$scope.viewDetails=function(param){			
+	$scope.viewDetails=function(param){
 	       $location.path("/detail/"+param)       
 	    }
     
